@@ -7,6 +7,7 @@
 html {
     height: 100%;
     font-size: 10px;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -18,7 +19,6 @@ body {
 .ba-container {
     max-width: 960px;
     width: 96%;
-    outline: 1px solid red;
 }
 
 header {
@@ -31,10 +31,14 @@ header {
 }
 
 header h1 {
+    margin: 15vh 0 30px 0;
+}
+
+.title {
     text-transform: uppercase;
     font-size: 8rem;
-    margin: 15vh 0 30px 0;
     line-height: 1;
+    text-align: center;
 }
 
 header p {
@@ -43,8 +47,8 @@ header p {
 }
 
 .scroll {
-    width: 44px;
-    height: 44px;
+    width: 45px;
+    height: 45px;
     border: 2px solid #FFF;
     display: inline-block;
     border-radius: 50%;
@@ -63,4 +67,32 @@ header p {
 .scroll:active {
     border-color: rgba(255,255,255, 0.6);
     background-position: center 60%;
+}
+
+main {
+    padding: 120px 0;
+    background-image: url(../img/bg.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #464B4f;
+    padding: 0 40px;
+}
+
+.skills {
+    margin-top: 120px;
+    color: #464B4f;
+}
+
+.skills h3 {
+    text-transform: uppercase;
+}
+
+.about p {
+    margin-bottom: 2em;
 }
